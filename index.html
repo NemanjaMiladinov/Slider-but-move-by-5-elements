@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <title>Document</title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+      .products {
+        background-color: grey;
+        height: 20rem;
+        overflow: hidden;
+      }
+      .product-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        /* justify-content: space-between; */
+        /* justify-items: center; */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-in-out;
+        backface-visibility: hidden;
+      }
+      .product {
+        height: 200px;
+        width: 150px;
+        background-color: violet;
+        margin-right: 1rem;
+        overflow: hidden;
+        /* position: absolute; */
+      }
+      .next {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button class="back">back</button>
+    <button class="next">next</button>
+    <div class="products"></div>
+  </body>
+</html>
